@@ -1,4 +1,4 @@
-package kz.dehaliboch.otp_test
+package kz.dehaliboch.otp_test.sms_retriever.broadcast_receirver
 
 import android.content.BroadcastReceiver
 import android.content.Context

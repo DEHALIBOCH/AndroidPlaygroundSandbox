@@ -1,8 +1,9 @@
-package kz.dehaliboch.otp_test
+package kz.dehaliboch.otp_test.sms_retriever.sms_code_provider
 
 import android.content.Context
 import android.content.IntentFilter
 import com.google.android.gms.auth.api.phone.SmsRetriever
+import kz.dehaliboch.otp_test.sms_retriever.broadcast_receirver.SmsMessagingReceiver
 
 class SmsCodeHelperImpl(private val context: Context) : SmsCodeProvider {
 

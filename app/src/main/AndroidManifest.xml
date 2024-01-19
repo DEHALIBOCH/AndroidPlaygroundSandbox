@@ -23,7 +23,7 @@
         </activity>
 
         <receiver
-            android:name=".SmsMessagingReceiver"
+            android:name=".sms_retriever.broadcast_receirver.SmsMessagingReceiver"
             android:exported="true">
             <intent-filter>
                 <action android:name="com.google.android.gms.auth.api.phone.SMS_RETRIEVED" />

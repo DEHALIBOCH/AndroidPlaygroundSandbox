@@ -1,4 +1,4 @@
-package kz.dehaliboch.otp_test
+package kz.dehaliboch.otp_test.sms_retriever.sms_code_provider
 
 interface SmsCodeProvider {
 

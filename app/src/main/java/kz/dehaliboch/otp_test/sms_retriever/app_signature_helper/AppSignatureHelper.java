@@ -1,4 +1,4 @@
-package kz.dehaliboch.otp_test;
+package kz.dehaliboch.otp_test.sms_retriever.app_signature_helper;
 
 import android.content.Context;
 import android.content.ContextWrapper;

@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">otp_test</string>
+    <string name="otp_field">OTP Field:</string>
 </resources>

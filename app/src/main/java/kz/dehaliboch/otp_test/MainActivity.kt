@@ -1,5 +1,6 @@
 package kz.dehaliboch.otp_test
 
+import android.content.Intent
 import android.os.Bundle
 import android.util.Log
 import android.widget.Toast
@@ -7,6 +8,7 @@ import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
+import kz.dehaliboch.otp_test.concurrency.PipeExampleActivity
 import kz.dehaliboch.otp_test.databinding.ActivityMainBinding
 import kz.dehaliboch.otp_test.sms_retriever.app_signature_helper.AppSignatureHashHelper
 import kz.dehaliboch.otp_test.sms_retriever.app_signature_helper.AppSignatureHelper
@@ -30,6 +32,8 @@ class MainActivity : AppCompatActivity() {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
         }
+        val intent = Intent(this, PipeExampleActivity::class.java)
+        startActivity(intent)
 //        checkHashCodeForSms()
     }
 
@@ -56,4 +60,9 @@ class MainActivity : AppCompatActivity() {
 //        Log.d("App Signatures", hash)
 //        Log.d("App Signatures", "java" + hash2)
 //    }
+
+    override fun onDestroy() {
+        super.onDestroy()
+        _binding = null
+    }
 }
